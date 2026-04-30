@@ -58,13 +58,3 @@ python run.py
 Then open **http://localhost:5000**
 
 ---
-
-## Running Tests
-
-```bash
-python -m pytest tests/test_bot.py -v
-```
-Expected: **29 passed**
-The README also includes a full example questions table, training mode instructions, project structure tree, and tech stack summary.
-
-Want me to change anything (wording, add/remove sections, different format)
