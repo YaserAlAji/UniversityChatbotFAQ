@@ -1,0 +1,376 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - good evening
+    - hi there
+    - hello there
+    - greetings
+    - hey bot
+    - what's up
+    - howdy
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see you
+    - talk to you later
+    - have a good day
+    - catch you later
+    - till next time
+    - bye bye
+    - take care
+    - farewell
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you so much
+    - appreciate it
+    - thanks for your help
+    - that's helpful
+    - helpful, thanks
+    - perfect, thank you
+    - great, thanks
+
+- intent: ask_registration_deadline
+  examples: |
+    - when is the registration deadline?
+    - what's the last day to register?
+    - registration due date
+    - when can I register for courses?
+    - when does course registration end?
+    - deadline for enrollment
+    - last date to enroll
+    - registration closing date
+    - when do I need to register by?
+    - course registration period
+    - when does registration start?
+    - registration dates
+    - enrollment period
+    - when to register for classes
+    - registration timeline
+
+- intent: ask_tuition_fee
+  examples: |
+    - how much is tuition?
+    - what are the tuition fees?
+    - cost of study
+    - how much does it cost?
+    - tuition payment amount
+    - what do I pay for tuition?
+    - university fees
+    - cost per semester
+    - how expensive is it?
+    - tuition price
+    - how much do I need to pay?
+    - what's the fee structure?
+    - annual tuition cost
+    - semester fees
+    - education costs
+
+- intent: ask_exam_schedule
+  examples: |
+    - when are exams?
+    - exam dates
+    - what's the exam schedule?
+    - when do finals start?
+    - examination period
+    - midterm exam dates
+    - final exam calendar
+    - when is my exam?
+    - exam timetable
+    - test schedule
+    - when are final exams?
+    - midterm schedule
+    - exam period dates
+    - when do exams begin?
+    - examination calendar
+
+- intent: ask_library_hours
+  examples: |
+    - when is the library open?
+    - library opening hours
+    - library schedule
+    - what time does library close?
+    - library working hours
+    - when can I access the library?
+    - is the library open now?
+    - library timings
+    - library availability
+    - library open time
+    - what are library hours?
+    - when does library open?
+    - library operating hours
+    - can I go to library on weekend?
+
+- intent: ask_department_contact
+  examples: |
+    - how do I contact software engineering department?
+    - department email
+    - who do I talk to about my major?
+    - contact information for department
+    - department phone number
+    - how to reach my department?
+    - department contact details
+    - faculty contact
+    - who is the department head?
+    - department office location
+    - how to email department?
+    - department advisor contact
+    - where is the department office?
+
+- intent: ask_admission_requirements
+  examples: |
+    - what are the admission requirements?
+    - how do I apply?
+    - admission criteria
+    - what do I need to get admitted?
+    - application requirements
+    - how to get into the university?
+    - what documents are needed for admission?
+    - admission process
+    - entry requirements
+    - what's needed to apply?
+    - GPA requirements
+    - admission qualifications
+    - how to submit application?
+    - application procedure
+
+- intent: ask_scholarship
+  examples: |
+    - are there scholarships available?
+    - how do I get a scholarship?
+    - scholarship opportunities
+    - financial aid options
+    - scholarship requirements
+    - can I get financial support?
+    - scholarship application
+    - do you offer scholarships?
+    - merit scholarships
+    - need-based aid
+    - scholarship criteria
+    - how to apply for scholarship?
+    - what scholarships exist?
+
+- intent: ask_campus_location
+  examples: |
+    - where is the campus located?
+    - campus address
+    - how do I get to campus?
+    - university location
+    - where is Altinbas University?
+    - campus directions
+    - university address
+    - how to reach campus?
+    - campus map
+    - where is the main campus?
+    - campus location in Istanbul
+    - which district is campus in?
+
+- intent: ask_dormitory
+  examples: |
+    - do you have dormitories?
+    - is there student housing?
+    - accommodation options
+    - dorm availability
+    - how to get dormitory?
+    - on-campus housing
+    - residence halls
+    - dormitory fees
+    - student accommodation
+    - housing for students
+    - dorm application
+    - where can students live?
+    - dormitory rooms
+
+- intent: ask_programs_offered
+  examples: |
+    - what programs do you offer?
+    - which majors are available?
+    - list of departments
+    - what can I study here?
+    - available degrees
+    - undergraduate programs
+    - graduate programs
+    - what faculties exist?
+    - courses offered
+    - academic programs
+    - what majors exist?
+    - engineering programs
+    - business programs
+    - available fields of study
+
+- intent: ask_student_id
+  examples: |
+    - how do I get my student ID?
+    - student ID card
+    - where to get ID card?
+    - ID card application
+    - student card process
+    - when will I receive my ID?
+    - how to activate student card?
+    - lost student ID
+    - ID card replacement
+    - student identification
+    - campus card
+
+- intent: ask_cafeteria
+  examples: |
+    - where is the cafeteria?
+    - cafeteria hours
+    - food on campus
+    - dining options
+    - where to eat?
+    - cafeteria menu
+    - meal plans
+    - student restaurant
+    - food services
+    - canteen location
+    - cafeteria prices
+    - what food is available?
+
+- intent: ask_sports_facilities
+  examples: |
+    - do you have a gym?
+    - sports facilities
+    - fitness center
+    - sports activities
+    - athletic facilities
+    - gym membership
+    - swimming pool
+    - basketball court
+    - sports center hours
+    - how to use gym?
+    - recreational facilities
+    - sports clubs
+
+- intent: ask_calendar
+  examples: |
+    - what's the academic calendar?
+    - semester dates
+    - when does semester start?
+    - academic year dates
+    - holiday schedule
+    - when is winter break?
+    - semester end date
+    - academic schedule
+    - important dates
+    - when do classes begin?
+    - school calendar
+    - term dates
+
+- intent: ask_course_add_drop
+  examples: |
+    - how do I drop a course?
+    - add/drop period
+    - can I change my courses?
+    - drop deadline
+    - add course procedure
+    - when can I drop a class?
+    - course withdrawal
+    - change course registration
+    - drop without penalty
+    - add/drop dates
+    - course swap
+
+- intent: ask_transcript
+  examples: |
+    - how do I get my transcript?
+    - transcript request
+    - official transcript
+    - academic records
+    - transcript fee
+    - how long for transcript?
+    - transcript application
+    - where to request transcript?
+    - digital transcript
+    - transcript delivery time
+
+- intent: ask_internship
+  examples: |
+    - internship opportunities
+    - how to find internship?
+    - internship requirements
+    - mandatory internship
+    - career services
+    - internship program
+    - summer internship
+    - internship support
+    - company partnerships
+    - internship credit
+    - how to apply for internship?
+
+- intent: ask_exchange_program
+  examples: |
+    - study abroad programs
+    - exchange opportunities
+    - Erasmus program
+    - international exchange
+    - study in Europe
+    - exchange requirements
+    - partner universities
+    - how to apply for exchange?
+    - exchange semester
+    - student mobility
+    - international programs
+
+- intent: ask_graduation_requirements
+  examples: |
+    - what do I need to graduate?
+    - graduation requirements
+    - how many credits to graduate?
+    - minimum GPA for graduation
+    - graduation conditions
+    - when can I graduate?
+    - degree requirements
+    - graduation project
+    - credits needed
+    - how to apply for graduation?
+
+- intent: ask_gpa_calculation
+  examples: |
+    - how is GPA calculated?
+    - GPA calculation method
+    - what's my GPA?
+    - how to check GPA?
+    - grade point average
+    - grading system
+    - GPA scale
+    - how grades work?
+    - credit calculation
+    - cumulative GPA
+
+- intent: ask_student_portal
+  examples: |
+    - how to access student portal?
+    - portal login
+    - forgot portal password
+    - student information system
+    - online system access
+    - portal problems
+    - can't login to portal
+    - portal website
+    - OBS system
+    - student system login
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - am I talking to a bot?
+    - who are you?
+    - what are you?
+    - are you real?
+    - is this automated?
+    - am I talking to a person?

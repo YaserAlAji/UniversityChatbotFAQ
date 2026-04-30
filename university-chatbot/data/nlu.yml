@@ -1,0 +1,32 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+
+- intent: registration
+  examples: |
+    - how do i register?
+    - course registration help
+    - i want to register for classes
+    - where is registration?
+
+- intent: library_info
+  examples: |
+    - where is the library?
+    - library hours
+    - when does the library open?
+    - library location

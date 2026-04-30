@@ -1,0 +1,127 @@
+version: "3.1"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say you're welcome
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Registration deadline
+  steps:
+  - intent: ask_registration_deadline
+  - action: utter_registration_deadline
+
+- rule: Tuition fees
+  steps:
+  - intent: ask_tuition_fee
+  - action: utter_tuition_fee
+
+- rule: Exam schedule
+  steps:
+  - intent: ask_exam_schedule
+  - action: utter_exam_schedule
+
+- rule: Library hours
+  steps:
+  - intent: ask_library_hours
+  - action: utter_library_hours
+
+- rule: Department contact
+  steps:
+  - intent: ask_department_contact
+  - action: utter_department_contact
+
+- rule: Admission requirements
+  steps:
+  - intent: ask_admission_requirements
+  - action: utter_admission_requirements
+
+- rule: Scholarships
+  steps:
+  - intent: ask_scholarship
+  - action: utter_scholarship
+
+- rule: Campus location
+  steps:
+  - intent: ask_campus_location
+  - action: utter_campus_location
+
+- rule: Dormitory
+  steps:
+  - intent: ask_dormitory
+  - action: utter_dormitory
+
+- rule: Programs offered
+  steps:
+  - intent: ask_programs_offered
+  - action: utter_programs_offered
+
+- rule: Student ID
+  steps:
+  - intent: ask_student_id
+  - action: utter_student_id
+
+- rule: Cafeteria
+  steps:
+  - intent: ask_cafeteria
+  - action: utter_cafeteria
+
+- rule: Sports facilities
+  steps:
+  - intent: ask_sports_facilities
+  - action: utter_sports_facilities
+
+- rule: Academic calendar
+  steps:
+  - intent: ask_calendar
+  - action: utter_calendar
+
+- rule: Course add/drop
+  steps:
+  - intent: ask_course_add_drop
+  - action: utter_course_add_drop
+
+- rule: Transcript
+  steps:
+  - intent: ask_transcript
+  - action: utter_transcript
+
+- rule: Internship
+  steps:
+  - intent: ask_internship
+  - action: utter_internship
+
+- rule: Exchange programs
+  steps:
+  - intent: ask_exchange_program
+  - action: utter_exchange_program
+
+- rule: Graduation requirements
+  steps:
+  - intent: ask_graduation_requirements
+  - action: utter_graduation_requirements
+
+- rule: GPA calculation
+  steps:
+  - intent: ask_gpa_calculation
+  - action: utter_gpa_calculation
+
+- rule: Student portal
+  steps:
+  - intent: ask_student_portal
+  - action: utter_student_portal
+
+- rule: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge

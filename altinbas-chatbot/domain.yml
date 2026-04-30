@@ -1,0 +1,115 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - ask_registration_deadline
+  - ask_tuition_fee
+  - ask_exam_schedule
+  - ask_library_hours
+  - ask_department_contact
+  - ask_admission_requirements
+  - ask_scholarship
+  - ask_campus_location
+  - ask_dormitory
+  - ask_programs_offered
+  - ask_student_id
+  - ask_cafeteria
+  - ask_sports_facilities
+  - ask_calendar
+  - ask_course_add_drop
+  - ask_transcript
+  - ask_internship
+  - ask_exchange_program
+  - ask_graduation_requirements
+  - ask_gpa_calculation
+  - ask_student_portal
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hello! 👋 I'm the Altinbas University FAQ assistant. I can help you with information about registration, courses, campus facilities, and much more. What would you like to know?"
+  - text: "Hi there! Welcome to Altinbas University's virtual assistant. How can I help you today?"
+  
+  utter_goodbye:
+  - text: "Goodbye! Feel free to come back if you have more questions. Have a great day! 😊"
+  - text: "See you later! Don't hesitate to reach out if you need any help. Take care!"
+  
+  utter_thank:
+  - text: "You're very welcome! Happy to help! 😊"
+  - text: "My pleasure! If you have any other questions, feel free to ask."
+  
+  utter_registration_deadline:
+  - text: "📅 Course registration periods:\n\n• Fall Semester: September 1-15\n• Spring Semester: February 1-15\n\nLate registration is available for one week after these dates with an additional late fee of 500 TL."
+  
+  utter_tuition_fee:
+  - text: "💰 Tuition fees vary by program:\n\n• Software Engineering: $5,000/year\n• Business Administration: $4,500/year\n• Architecture: $5,500/year\n\nFor the complete fee structure and payment plans, please visit the Finance Office or check our official website: www.altinbas.edu.tr/fees"
+  
+  utter_exam_schedule:
+  - text: "📝 Exam Schedule:\n\n• Midterm Exams: Week 8 of each semester\n• Final Exams: Last two weeks of semester\n\nThe detailed exam schedule is published on the student portal 3 weeks before exams begin. You'll receive an email notification when it's available."
+  
+  utter_library_hours:
+  - text: "📚 Library Hours:\n\n• Monday-Friday: 8:00 AM - 10:00 PM\n• Saturday: 9:00 AM - 6:00 PM\n• Sunday: Closed\n\nDuring exam periods, weekday hours are extended until midnight. The library also offers 24/7 access to digital resources through the online portal."
+  
+  utter_department_contact:
+  - text: "📧 Software Engineering Department Contact:\n\n• Email: softwareeng@altinbas.edu.tr\n• Phone: +90 212 709 4444 (ext. 2151)\n• Office: Engineering Building, 3rd Floor, Room 302\n• Department Head: Prof. Dr. Mehmet Yılmaz\n• Office Hours: Mon-Fri, 10:00 AM - 4:00 PM"
+  
+  utter_admission_requirements:
+  - text: "📋 Admission Requirements:\n\n• High school diploma or equivalent\n• Minimum GPA: 2.5/4.0 or 65/100\n• English proficiency (TOEFL 70+ or IELTS 6.0+)\n• YÖS or SAT scores (for international students)\n• Application form with required documents\n\nFor detailed requirements by program, visit: www.altinbas.edu.tr/admissions"
+  
+  utter_scholarship:
+  - text: "🎓 Scholarship Opportunities:\n\n• Merit Scholarships: 25%, 50%, 75%, 100% (based on exam scores)\n• Need-based Financial Aid: Available upon application\n• Sports Scholarships: For national/international athletes\n• Sibling Discount: 10% for families with multiple students\n\nApplication deadline: Same as admission deadline\nContact: scholarships@altinbas.edu.tr"
+  
+  utter_campus_location:
+  - text: "📍 Campus Location:\n\nAltinbas University Main Campus\nMahmutbey Mahallesi, Dilmenler Caddesi No: 26\nBağcılar, Istanbul, Turkey\n\nHow to reach:\n• Metro: Mahmutbey Station (M3 line) - 5 min walk\n• Bus: Lines 41C, 76B, 146A\n• Free shuttle service from Yenibosna Metro Station\n\nCampus Map: www.altinbas.edu.tr/campus-map"
+  
+  utter_dormitory:
+  - text: "🏠 Dormitory Information:\n\n• On-campus residence halls available\n• Single and double room options\n• Fees: 1,500-2,500 TL/month (includes utilities)\n• Facilities: WiFi, study rooms, laundry, cafeteria\n• Application: Through student portal\n• Priority given to out-of-city students\n\nContact: housing@altinbas.edu.tr | +90 212 709 4444 (ext. 3100)"
+  
+  utter_programs_offered:
+  - text: "🎓 Academic Programs at Altinbas University:\n\nEngineering:\n• Software Engineering\n• Computer Engineering\n• Civil Engineering\n• Mechanical Engineering\n\nBusiness & Management:\n• Business Administration\n• International Trade\n• Economics\n\nHealth Sciences:\n• Medicine\n• Nursing\n• Physiotherapy\n\nFor complete list: www.altinbas.edu.tr/programs"
+  
+  utter_student_id:
+  - text: "🆔 Student ID Card Process:\n\n• Issued during orientation week\n• Bring: 2 passport photos, ID/passport copy\n• Location: Student Affairs Office\n• Processing time: 3-5 business days\n• Fee: 50 TL (first card free)\n\nLost card replacement: 100 TL\nCard functions: Library access, cafeteria payment, building entry\n\nContact: studentaffairs@altinbas.edu.tr"
+  
+  utter_cafeteria:
+  - text: "🍽️ Cafeteria Information:\n\n• Main Cafeteria: Engineering Building, Ground Floor\n• Hours: 8:00 AM - 7:00 PM (Mon-Fri)\n• Meal Plans:\n  - Breakfast: 25-35 TL\n  - Lunch: 45-60 TL\n  - Dinner: 40-55 TL\n\n• Student Cafe: Library Building\n• Snacks and beverages available\n\nMonthly meal packages available at discounted rates!"
+  
+  utter_sports_facilities:
+  - text: "🏋️ Sports Facilities:\n\n• Fitness Center: Free for students (membership required)\n• Basketball Court: Indoor and outdoor\n• Swimming Pool: Olympic size, 6:00 AM - 9:00 PM\n• Tennis Courts: 2 courts available\n• Football Field: Synthetic turf\n\nFacilities hours: 6:00 AM - 10:00 PM\nRegistration: Sports Center or sportscenter@altinbas.edu.tr\n\nSports clubs: Basketball, Football, Swimming, Yoga, Pilates"
+  
+  utter_calendar:
+  - text: "📅 2024-2025 Academic Calendar:\n\nFall Semester:\n• Registration: Sept 1-15\n• Classes Begin: Sept 18\n• Midterms: Nov 4-8\n• Finals: Jan 6-17\n\nSpring Semester:\n• Registration: Feb 1-15\n• Classes Begin: Feb 18\n• Midterms: Apr 7-11\n• Finals: June 9-20\n\nHolidays: National holidays, winter break (Dec 23 - Jan 5), spring break (1 week in April)"
+  
+  utter_course_add_drop:
+  - text: "✏️ Add/Drop Course Information:\n\n• Add/Drop Period: First 2 weeks of semester\n• No penalty during this period\n• Process: Through student portal (OBS)\n• Late drop: Weeks 3-8 with academic advisor approval\n• Drop after Week 8: Results in 'F' grade\n\nMaximum course load: 35 credits/semester\nMinimum: 12 credits for full-time status\n\nNeed help? Contact your academic advisor."
+  
+  utter_transcript:
+  - text: "📄 Transcript Request:\n\n• Official Transcript: 30 TL per copy\n• Request method: Student portal or Registrar's Office\n• Processing time: 3-5 business days\n• Digital transcript: Available immediately (free)\n• Delivery: Pick up or courier service (+50 TL)\n\nFor international transcripts (with apostille): 150 TL\n\nRegistrar's Office: registrar@altinbas.edu.tr | +90 212 709 4444 (ext. 2200)"
+  
+  utter_internship:
+  - text: "💼 Internship Information:\n\n• Mandatory: 30 days for engineering students (6th semester)\n• Optional: Summer internships encouraged for all programs\n• Career Services support: Resume review, interview prep\n• Partner companies: 200+ companies in Istanbul\n• Credit: 2-4 credits upon completion\n\nCareer Services Office:\n• Email: career@altinbas.edu.tr\n• Location: Administrative Building, 2nd Floor\n• Internship fairs: October and March"
+  
+  utter_exchange_program:
+  - text: "🌍 Exchange Programs:\n\n• Erasmus+: 80+ partner universities in Europe\n• Bilateral Exchange: USA, Canada, Asia\n• Duration: 1 semester or full academic year\n• Requirements:\n  - Minimum 2.5 GPA\n  - Completed 2 semesters\n  - Language proficiency\n\nScholarship: Monthly stipend provided\nApplication deadline: November for spring, April for fall\n\nInternational Office: international@altinbas.edu.tr"
+  
+  utter_graduation_requirements:
+  - text: "🎓 Graduation Requirements:\n\n• Total Credits: 240 ECTS (for 4-year programs)\n• Minimum GPA: 2.0/4.0\n• All required courses completed\n• Internship completed (if mandatory)\n• Graduation project/thesis passed\n• No outstanding fees\n• English proficiency exam passed\n\nApplication: Submit graduation petition during final semester\nGraduation ceremony: June and February\n\nContact your academic advisor 6 months before expected graduation."
+  
+  utter_gpa_calculation:
+  - text: "📊 GPA Calculation System:\n\n• Grade Scale:\n  AA = 4.0 | BA = 3.5 | BB = 3.0\n  CB = 2.5 | CC = 2.0 | DC = 1.5\n  DD = 1.0 | FD = 0.5 | FF = 0.0\n\n• Formula: (Sum of Grade Points × Credits) ÷ Total Credits\n• Semester GPA: Current semester only\n• Cumulative GPA: All semesters combined\n\nYou can check your GPA anytime through the student portal under 'Academic Records'."
+  
+  utter_student_portal:
+  - text: "💻 Student Portal (OBS) Access:\n\n• Website: obs.altinbas.edu.tr\n• Login: Student number + password\n• Initial password: Your birth date (DDMMYYYY)\n• Forgot password: Click 'Forgot Password' or email it@altinbas.edu.tr\n\nPortal functions:\n• Course registration\n• Grade viewing\n• Exam schedule\n• Document requests\n• Fee payments\n\nTechnical support: +90 212 709 4444 (ext. 1500)"
+  
+  utter_bot_challenge:
+  - text: "I am an AI chatbot assistant created to help Altinbas University students with their questions. I'm here 24/7 to provide information about registration, courses, campus services, and more! While I'm not a human, I'll do my best to help you. 🤖"
+  
+  utter_default:
+  - text: "I'm sorry, I didn't quite understand that. I can help you with:\n\n• Registration and enrollment\n• Tuition fees and scholarships\n• Exam schedules\n• Campus facilities\n• Academic programs\n• Student services\n\nCould you please rephrase your question?"
+  - text: "I'm not sure I understand. Could you ask that in a different way? I'm here to help with university-related questions about courses, registration, campus life, and more!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

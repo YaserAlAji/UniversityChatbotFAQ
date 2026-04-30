@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="logo-area">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="header-text">
+                    <h1>UniAssistant</h1>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+        
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="text">Hello! I am your University Assistant. I can help you with registration, course info, schedules, and more. How can I help you today?</div>
+            </div>
+        </div>
+        
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off">
+            <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

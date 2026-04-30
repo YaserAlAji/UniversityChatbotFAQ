@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: registration path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: registration
+  - action: utter_registration
+
+- story: library path
+  steps:
+  - intent: library_info
+  - action: utter_library
